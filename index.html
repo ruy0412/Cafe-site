@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Ruy | ひと休みできるカフェ</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f8f5ef;
+    color: #3b3028;
+    line-height: 1.8;
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e8ddcc;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 18px;
+    background: #fffdf9;
+  }
+
+  nav a {
+    color: #5c4033;
+    text-decoration: none;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+
+  h2 {
+    color: #8b5e3c;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+  }
+
+.hero {
+  position: relative;
+  text-align: center;
+  background: #e8ddcc;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.hero-text {
+  padding: 24px 16px;
+}
+
+.hero-text h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    background: #e8ddcc;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.hero-text {
+    padding: 24px 16px;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.menu-card {
+  background: #dfb96c;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  font-size: 16px;
+}
+
+.price {
+  font-weight: bold;
+  color: #8b5e3c;
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+<body>
+
+  <header>
+    <h1>Café Ruy</h1>
+    <p>日常に、ちょっとした心の休憩を。</p>
+  </header>
+
+  <nav>
+    <a href="#about">お店について</a>
+    <a href="#menu">メニュー</a>
+    <a href="#info">店舗情報</a>
+  </nav>
+
+<section class="hero">
+  <img
+    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=80"
+    alt="落ち着いた雰囲気のカフェ"
+  >
+  <div class="hero-text">
+    <h2>Slow down, enjoy your coffee.</h2>
+    <p>お気に入りの一杯と、心安らぐひとときを。</p>
+  </div>
+</section>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>ゆったりとした時間を過ごせる、小さなカフェです。</p>
+    </section>
+
+    <section id="menu">
+    <h2>Menu</h2>
+    <p>こだわりのドリンクとスイーツ。</p>
+
+    <div class="menu-grid">
+        <article class="menu-card">
+            <h3>Blend Coffee</h3>
+            <p>香り豊かな定番の一杯。</p>
+            <p class="price">450円</p>
+        </article>
+
+        <article class="menu-card">
+            <h3>Cafe Latte</h3>
+            <p>ミルクの甘さとコーヒーの調和。</p>
+            <p class="price">500円</p>
+        </article>
+
+        <article class="menu-card">
+            <h3>Cheese Cake</h3>
+            <p>コーヒーによく合う濃厚なケーキ。</p>
+            <p class="price">550円</p>
+        </article>
+            
+        <article class="menu-card">
+            <h3>Chocolate Cake</h3>
+            <p>ラテの甘さのお供に丁度いいケーキ。</p>
+            <p class="price">700円</p>
+        </article>
+    </div>
+    </section>
+
+    <section id="info">
+      <h2>Information</h2>
+      <p>営業時間：10:00〜19:00</p>
+      <p>ラストオーダー：18:45</p>
+      <p>定休日：木曜日</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Café Ruy</p>
+  </footer>
+
+</body>
+</html>
