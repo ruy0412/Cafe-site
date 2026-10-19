@@ -140,16 +140,42 @@
 }
 
 .menu-card {
-  background: #dfb96c;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(60, 40, 25, 0.08);
+  transition: transfrom 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover{
+  transform: translate(-5px);
+  box-shadow: 0 10px 24px rgba(60, 40, 25, 0.14);
+}
+
+.menu-card img{
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.menu-card-content{
   padding: 18px;
-  border-radius: 10px;
 }
 
 .menu-card h3 {
-  font-size: 16px;
+  margin-top: 0;
+  font-size: 17px;
+  color: #38251b;
+}
+
+.menu-card p {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .price {
+  font-size: 18px !important;
   font-weight: bold;
   color: #8b5e3c;
 }
@@ -182,7 +208,7 @@
   >
   <div class="hero-text">
     <p class="hero-subtitle">やさしい時間、やさしいコーヒー</p>
-    <h2>Café Lumi</h2>
+    <h2>Café Ruy</h2>
     <p>
         こだわりのコーヒーと手作りスイーツで、<br>
         日常にちょっとした贅沢を。
@@ -203,28 +229,77 @@
 
     <div class="menu-grid">
         <article class="menu-card">
+          <img 
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" 
+            alt="ブレンドコーヒー"
+          >
+          <div class="menu-card-content"> 
             <h3>Blend Coffee</h3>
             <p>香り豊かな定番の一杯。</p>
             <p class="price">450円</p>
+          <div>
         </article>
 
         <article class="menu-card">
+          <img 
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" 
+            alt="カフェラテ"
+          >
+          <div class="menu-card-content">
             <h3>Cafe Latte</h3>
             <p>ミルクの甘さとコーヒーの調和。</p>
             <p class="price">500円</p>
+          </div>
         </article>
 
         <article class="menu-card">
+          <img 
+            src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80" 
+            alt="抹茶ラテ"
+          >
+          <div class="menu-card-content">
+            <h3>Matcha Latte</h3>
+            <p>抹茶の香りとミルクのまろやかな味わい。</p>
+            <p class="price">550円</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img 
+            src="images/cheese-cake.avif" 
+            alt="チーズケーキ"
+          >
+          <div class="menu-card-content">
             <h3>Cheese Cake</h3>
             <p>コーヒーによく合う濃厚なケーキ。</p>
             <p class="price">550円</p>
+          </div>
         </article>
             
         <article class="menu-card">
+          <img 
+            src="images/chocolate-cake.jpeg" 
+            alt="チョコケーキ"
+          >
+          <div class="menu-card-content">
             <h3>Chocolate Cake</h3>
-            <p>ラテのお供に丁度いいケーキ。</p>
-            <p class="price">700円</p>
+            <p>コーヒーと楽しむ濃厚なチョコレートケーキ。</p>
+            <p class="price">580円</p>
+          </div>
         </article>
+
+        <article class="menu-card">
+          <img 
+            src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=600&q=80" 
+            alt="ふわふわのパンケーキ"
+          >
+          <div class="menu-card-content">
+            <h3>Pancakes</h3>
+            <p>ふわふわのパンケーキに、甘いシロップを添えて。</p>
+            <p class="price">670円</p>
+          </div>
+        </article>
+
     </div>
     </section>
 
